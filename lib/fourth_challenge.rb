@@ -7,6 +7,7 @@ def fourth_challenge
       :hero_friends => [
         {name: "Benvolio", age: "17", attitude: "worried"},
         {name: "Mercutio", age: "18", attitude: "hot-headed"}
+        epic_tragedy[:montague] [:hero] [:status] => "dead",
       ]
    }, 
    :capulet => {
@@ -19,6 +20,8 @@ def fourth_challenge
       ]
    }
 }
-  
+  epic_tragedy[:montague] [:hero] [:status] = "dead",
+  epic_tragedy[:capulet] [:heroine] [:status] => "dead"
+  puts epic_tragedy
 
 end
